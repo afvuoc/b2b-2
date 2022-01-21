@@ -1,0 +1,283 @@
+/*Carousel*/
+.carrousel {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: $atarashii-gakko-white;
+}
+
+.carrousel .slides {
+  position: relative;
+  width: 300%;
+  padding:0;
+  overflow: hidden;
+  list-style: none;
+  transition: left .75s ease-out;
+}
+
+.carrousel input {
+  display: none;
+}
+
+.carrousel .slides li {
+  position: relative;
+  float: left;
+  width: $carrousel-with;
+}
+
+.carrousel li p {
+  position: $atarashii-gakko-position-absolute;
+  right: 3.5%;
+  bottom: 6vh;
+  width: 24vw;
+  padding: 2%;
+  font-size: 1.05rem;
+  color: $atarashii-gakko-white;
+  background-color: $atarashii-gakko-black; 
+  transform: rotate(0deg);
+}
+
+.carrousel li img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.carrousel .slides-navigation {
+  position: $atarashii-gakko-position-absolute;
+  right: 0;
+  bottom: $carrousel-bottom;
+  left: 0;
+  width: 81px;
+  margin: $atarashii-gakko-auto;
+}
+
+.carrousel .slides-navigation label {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  width: 15px;
+  height: 15px;
+  margin: 6px;
+  font-size: 0;
+  cursor: pointer;
+  border: solid 2px $atarashii-gakko-white;
+  border-radius: 50%;
+}
+
+#radio-1:checked ~ .slides {
+  left: 0;
+}
+
+#radio-2:checked ~ .slides {
+  left: -100%;
+}
+
+#radio-3:checked ~ .slides {
+  left: -200%;
+}
+
+.carrousel #radio-1:checked ~ .slides-navigation label#dotForRadio-1,
+.carrousel #radio-2:checked ~ .slides-navigation label#dotForRadio-2,
+.carrousel #radio-3:checked ~ .slides-navigation label#dotForRadio-3 {
+  background: $atarashii-gakko-white;
+}
+
+/* Media queries carrrousel */
+@media (max-width:1100px) {
+  .carrousel li p {
+    width: 33vw;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: $atarashii-gakko-tablet) {
+
+  .carrousel li p {
+    right: 0;
+    bottom: 0;
+    width: $atarashii-gakko-auto;
+    padding-top: 4vh;
+    padding-right: 6vw;
+    padding-bottom: 12vh;
+    padding-left: 6vw;
+    margin-bottom:0;
+    font-size: .95rem;
+    text-align: center;
+    opacity: .8;
+  }
+
+  .carrousel .slides-navigation {
+    width: 75px;
+  }
+  
+  .carrousel .slides-navigation label {
+    width: 13px;
+    height: 13px;
+  }
+}
+
+/* Cards flexbox*/
+.container-flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 96vw;
+  padding-top:5vh;
+  margin: $atarashii-gakko-auto;
+}
+
+.cards-flex {
+  display: flex;
+  width: 25%;
+  padding: .9rem;
+  margin-bottom: 1rem;
+}
+
+.card-item-flex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  background-color: $atarashii-gakko-black;
+  border-radius: 4px;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,.25);
+  transition: transform .5s;
+   
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.02); 
+  }
+}
+
+.card-image-flex {
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.card-image-flex-a {
+  background-image: url("/src/assets/images/atarashii-gakko-member-info-1.jpg");
+}
+
+.card-image-flex-b {
+  background-image: url("/src/assets/images/atarashii-gakko-member-info-2.jpg");
+}
+
+.card-image-flex-c {
+  background-image: url("/src/assets/images/atarashii-gakko-member-info-3.jpg");
+}
+
+.card-image-flex-d {
+  background-image: url("/src/assets/images/atarashii-gakko-member-info-4.jpg");
+}
+
+.card-image-flex-e {
+  background-image: url("/src/assets/images/atarashii-gakko-member-info-5.jpg");
+}
+
+.card-image-flex-f {
+  background-image: url("/src/assets/images/atarashii-gakko-member-info-6.jpg");
+  background-position: top;
+}
+
+.card-image-flex-g {
+  background-image: url("/src/assets/images/atarashii-gakko-member-info-7.jpg");
+}
+
+.card-image-flex-h {
+  background-image: url("/src/assets/images/atarashii-gakko-member-info-8.jpg");
+}
+
+.card-rrss-flex {
+  min-height: 300px;
+  padding-top: 38%;
+  padding-bottom: 38%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .87);
+  opacity:0;
+  transition:.7s;
+
+  &:hover {
+    opacity:1;
+  }
+}
+  
+.card-rrss-flex i {
+  height: $atarashii-gakko-auto;
+  font-size: 4rem;
+  color:$atarashii-gakko-white;
+  transition:.7s;
+
+  &:first-child {
+    padding-right: .8rem;
+  }
+
+  &:last-child {
+    padding-left: .8rem;
+  }
+
+  &:hover {
+    color: $atarashii-gakko-corporate-color;
+  }
+}
+
+.card-info-flex {
+  display: flex;
+  flex: 1 1 $atarashii-gakko-auto;
+  flex-direction: column;
+  padding: 1rem;
+  padding-top: 2rem;
+  line-height: 1.5em;
+  color: $atarashii-gakko-white;
+  text-align: center;
+}
+
+.card-title-flex {
+  margin-bottom: .3em;
+  font-size: 1.6rem;
+  line-height: 1.1em;
+  color: $atarashii-gakko-white;
+}
+
+/* Media queries cards flex*/
+@media (max-width: 1100px) {
+  .cards-flex {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: $atarashii-gakko-tablet) {
+  .cards-flex {
+    width: 50%;
+  }
+
+  .card-image-flex {
+    height: 35vh;
+  }
+
+  .card-rrss-flex {
+    position: $atarashii-gakko-position-absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: $atarashii-gakko-auto;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    background-color: #00000094;
+    opacity: 1;
+    transition: 0s;
+  }
+
+  .card-rrss-flex i {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: $atarashii-gakko-phone) {
+  .cards-flex  {
+  width: 100%;
+  }
+}

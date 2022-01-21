@@ -1,0 +1,45 @@
+body {
+  background-color: $atarashii-gakko-black;
+}
+
+.container-fluid {
+  width: 95.5vw;
+  padding-top: 100px;
+}
+
+.item {
+  display:flex;
+}
+
+.card {
+  padding: 16px;
+  margin-bottom: .7rem;
+}
+
+.card img {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 18px;
+  box-shadow: 0 8px 20px -4px $atarashii-gakko-black;
+}
+
+.card p {
+  height: $atarashii-gakko-auto;
+  margin-top: .8rem;
+  margin-bottom: 0rem;
+  font-size: 1rem;
+  color: $atarashii-gakko-white;
+
+  &:last-child {
+    margin-bottom: .8rem;
+    opacity: .7;
+  } 
+}
+
+.card p b {
+  margin-right: .5rem;
+  margin-left: .5rem;
+  font-size: .8rem;
+}
+

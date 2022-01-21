@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/contacto.scss">
+  <link id="favicon" rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <title>Atarashii Gakkou no Leaders | Contacto</title>
+</head>
+
+
+<body>
+  <!-- header -->
+  <header data-aos="fade-down" data-aos-duration="600" data-aos-easing="ease-out-cubic">
+    <nav>
+      <a href="index.html">
+        <div>
+          <img src="./assets/images/logo-b2b.png" alt="AFV logo" class="logo" loading="lazy">
+        </div>
+      </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Curso</a></li>
+        <li><a href="gracias.html">Gracias</a></li>
+        <li><a href="error.html">Error</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <button class="menu-ham" type="button">
+        <span class="br-1"></span>
+        <span class="br-2"></span>
+        <span class="br-3"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container-form">
+
+      <article class="atarashi-members-left">
+        <img src="atarashii-gakko-contact.d87cf446.jpg" alt="atarashii gakko contact" loading="lazy">
+      </article>
+      <section class="form-fields">
+        <form id="form" class="form" name="atarashii-form" netlify action="/gracias">
+          <div class="form-control" data-aos="fade-top" data-aos-duration="300" data-aos-easing="ease-in-sine">
+            <input type="text" id="username" name="nombre" placeholder="Nombre" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control" data-aos="fade-top" data-aos-duration="300" data-aos-easing="ease-in-sine">
+            <input type="text" id="email" name="correo-electronico" placeholder="Email" />
+            <small>Error message</small>
+          </div>
+
+          <div class="form-control" data-aos="fade-top" data-aos-duration="300" data-aos-easing="ease-in-sine">
+            <input type="text" id="phone" name="telefono" placeholder="Teléfono" />
+            <small>Error message</small>
+          </div>
+
+          <div class="form-control" data-aos="fade-top" data-aos-duration="300" data-aos-easing="ease-in-sine">
+            <textarea type="text" id="message" name="mensaje" placeholder="Escribe un mensaje"></textarea>
+            <small>Error message</small>
+          </div>
+          <button  class="button" type="submit"  value="send" data-aos="fade-top" data-aos-duration="300" data-aos-easing="ease-in-sine">Enviar mensaje</button>
+
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <div class="footer-form">
+      <div class="footer-form-flex">
+        <p>© 2022 The B2B Sales Academy</p>
+      </div>
+      <div class="footer-form-flex">
+        <ul>
+          <li><a href="#">TODOS LOS CURSOS</a></li>
+        </ul>
+      </div>
+      <div class="footer-form-flex">
+        <ul>
+          <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/scripts/menu-burguer.js"></script><!-- do not remove this line! -->
+  <script src="./assets/scripts/contact-form.js"></script><!-- do not remove this line! -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

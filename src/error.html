@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/index.scss">
+  <link id="favicon" rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <title>THE B2B SALES ACADEMY | HOME</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header data-aos="fade-down" data-aos-duration="600" data-aos-easing="ease-out-cubic">
+    <nav>
+      <a href="index.html">
+        <div>
+          <img src="./assets/images/logo-b2b.png" alt="AFV logo" class="logo" loading="lazy">
+        </div>
+      </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Curso</a></li>
+        <li><a href="gracias.html">Gracias</a></li>
+        <li><a href="error.html">Error</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <button class="menu-ham" type="button">
+        <span class="br-1"></span>
+        <span class="br-2"></span>
+        <span class="br-3"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="error">
+    <article class="index">
+      <section class="description" data-aos="fade-left" data-aos-duration="600" data-aos-easing="ease-in-sine">
+        <h1>Se ha producido un error</h1>
+        <h3>Lo sentimos, pero la página que buscas no existe o no se puede encontrar</h3>
+        <button class="dbr-button"><a href="index.html">Volver al inicio</a></button>
+        <button class="dbr-button button-2"><a href="contacto.html">Contacta con nosotros</a></button>
+
+      </section>
+
+      <video src="./assets/images/error.mp4" autoplay muted loop></video>
+    </article>
+
+  </main>
+
+  <footer class="footer-error">
+    <div class="footer-form">
+      <div class="footer-form-flex">
+        <p>© 2022 The B2B Sales Academy</p>
+      </div>
+      <div class="footer-form-flex">
+        <ul>
+          <li><a href="#">TODOS LOS CURSOS</a></li>
+        </ul>
+      </div>
+      <div class="footer-form-flex">
+        <ul>
+          <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./assets/scripts/menu-burguer.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
